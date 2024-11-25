@@ -19,6 +19,7 @@ public class Main {
                 .name("Pupa")
                 .age(12)
                 .sex("male")
+                .build();
         MailCode mailCode = new BirthdayMailCode();
         MailInfo mailInfo = new MailInfo(client, mailCode);
         MailSender mailSender = new MailSender();
