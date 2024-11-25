@@ -7,25 +7,45 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class StudentTest {
+class StudentTest {
 
     @Test
-    public void testStudentFields() {
-        List<String> courses = Arrays.asList("Math", "Science", "History");
-        Student student = new Student();
+    void testStudentBuilder() {
+        List<String> courses = Arrays.asList("Math", "Physics");
+        Student student = Student.builder()
+                .firstName("John")
+                .lastName("Doe")
+                .gender("Male")
+                .email("john.doe@example.com")
+                .age(20)
+                .courses(courses)
+                .build();
 
-        student.firstName = "John";
-        student.lastName = "Smith";
-        student.gender = "Male";
-        student.email = "john.smith@example.com";
-        student.age = 20;
-        student.courses = courses;
+        assertEquals("John", student.getFirstName());
+        assertEquals("Doe", student.getLastName());
+        assertEquals("Male", student.getGender());
+        assertEquals("john.doe@example.com", student.getEmail());
+        assertEquals(20, student.getAge());
+        assertEquals(courses, student.getCourses());
+    }
 
-        assertEquals("John", student.firstName);
-        assertEquals("Smith", student.lastName);
-        assertEquals("Male", student.gender);
-        assertEquals("john.smith@example.com", student.email);
-        assertEquals(20, student.age);
-        assertEquals(courses, student.courses);
+    @Test
+    void testUpdateStudentFields() {
+        List<String> courses = Arrays.asList("Biology", "Chemistry");
+        Student student = Student.builder()
+                .firstName("Jane")
+                .lastName("Smith")
+                .gender("Female")
+                .email("jane.smith@example.com")
+                .age(22)
+                .courses(courses)
+                .build();
+
+        student.setFirstName("Janet");
+        student.setAge(23);
+
+        assertEquals("Janet", student.getFirstName());
+        assertEquals(23, student.getAge());
+        assertEquals(courses, student.getCourses());
     }
 }
