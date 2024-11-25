@@ -10,10 +10,10 @@ import java.util.List;
 @Setter
 @Builder
 public class Student {
-    private String firstName;
-    private String lastName;
-    private String gender;
-    private String email;
-    private int age;
-    private List<String> courses;
+    public String firstName;
+    public String lastName;
+    public String gender;
+    public String email;
+    public int age;
+    public List<String> courses;
 }
