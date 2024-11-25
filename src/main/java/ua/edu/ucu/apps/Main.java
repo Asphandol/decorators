@@ -29,7 +29,7 @@ public class Main {
                 .age(22)
                 .courses(List.of("Math", "Science"))
                 .build();
-        Clien client = Client.builder()
+        Client client = Client.builder()
                 .name("Pupa")
                 .age(12)
                 .sex("male")
