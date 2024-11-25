@@ -14,6 +14,8 @@ public class Main {
         MailInfo mailInfo = new MailInfo(client, mailCode);
         MailSender mailSender = new MailSender();
         mailSender.sendMail(mailInfo);
+        MyImage image = new ProxyImage("example.jpg");
+        image.display();
     }
 
 
