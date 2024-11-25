@@ -2,8 +2,12 @@ package ua.edu.ucu.apps;
 
 import java.util.List;
 
-import ua.edu.ucu.apps.task1.Student;
-import ua.edu.ucu.apps.task2.*;
+import ua.edu.ucu.apps.*;
+import javax.mail.*;
+import javax.mail.internet.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Properties;
 
 public class Main {
     public static void main(String[] args) {
