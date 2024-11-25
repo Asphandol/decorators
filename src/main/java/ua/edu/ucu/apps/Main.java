@@ -15,9 +15,12 @@ public class Main {
                 .age(22)
                 .courses(List.of("Math", "Science"))
                 .build();
-
+        Clien client = Client.builder()
+                .name("Pupa")
+                .age(12)
+                .sex("male")
         MailCode mailCode = new BirthdayMailCode();
-        MailInfo mailInfo = new MailInfo(student, mailCode);
+        MailInfo mailInfo = new MailInfo(client, mailCode);
         MailSender mailSender = new MailSender();
         mailSender.sendMail(mailInfo);
 
