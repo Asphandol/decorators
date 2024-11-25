@@ -10,13 +10,13 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import ua.edu.ucu.apps.task1.Student;
-import ua.edu.ucu.apps.task1.Client;
+import ua.edu.ucu.apps.task2.Client;
 import ua.edu.ucu.apps.task3.ProxyImage;
 import ua.edu.ucu.apps.task3.MyImage;
-import ua.edu.ucu.apps.task1.MailInfo;
-import ua.edu.ucu.apps.task1.MailSender;
-import ua.edu.ucu.apps.task1.MailCode;
-import ua.edu.ucu.apps.task1.BirthdayMailCode;
+import ua.edu.ucu.apps.task2.MailInfo;
+import ua.edu.ucu.apps.task2.MailSender;
+import ua.edu.ucu.apps.task2.MailCode;
+import ua.edu.ucu.apps.task2.BirthdayMailCode;
 
 
 public class Main {
