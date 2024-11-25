@@ -13,8 +13,8 @@ public class Main {
     }
 
     private static void sendBirthdayMail() {
-        Client client = Client.builder()
-                .name("Client Name")
+        Student student = Student.builder()
+                .first_name("Client Name")
                 .age(100)
                 .email("test@client.mail")
                 .build();
