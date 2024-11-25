@@ -9,6 +9,16 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import ua.edu.ucu.apps.task1.Student;
+import ua.edu.ucu.apps.task1.Client;
+import ua.edu.ucu.apps.task3.ProxyImage;
+import ua.edu.ucu.apps.task3.MyImage;
+import ua.edu.ucu.apps.task1.MailInfo;
+import ua.edu.ucu.apps.task1.MailSender;
+import ua.edu.ucu.apps.task1.MailCode;
+import ua.edu.ucu.apps.task1.BirthdayMailCode;
+
+
 public class Main {
     public static void main(String[] args) {
         Student student = Student.builder()
